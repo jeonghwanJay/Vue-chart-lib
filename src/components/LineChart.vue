@@ -8,7 +8,6 @@
 </template>
 
 <script>
-import Chart from 'chart.js'
 export default {
     mounted() {
         const labels = [
@@ -36,7 +35,7 @@ export default {
     options: {}
   };
   // eslint-disable-next-line
-   const lineChart = new Chart(
+   const lineChart = new this.$_Chart(
     this.$refs.LineChart,
     config
   );
