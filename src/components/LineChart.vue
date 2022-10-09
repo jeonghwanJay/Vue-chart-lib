@@ -2,7 +2,7 @@
   <div>
     <h1>LineChart</h1>
     <div>
-        <canvas id="lineChart"></canvas>
+        <canvas ref="LineChart"></canvas>
     </div>
   </div>
 </template>
@@ -37,7 +37,7 @@ export default {
   };
   // eslint-disable-next-line
    const lineChart = new Chart(
-    document.getElementById('lineChart'),
+    this.$refs.LineChart,
     config
   );
     }
