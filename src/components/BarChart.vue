@@ -1,7 +1,7 @@
 <template>
   <div>
-    <h1>Chart.js</h1>
-    <canvas id="myChart" width="400" height="400"></canvas>
+    <h1>BarChart</h1>
+    <canvas id="barChart" width="400" height="400"></canvas>
   </div>
 </template>
 
@@ -9,9 +9,9 @@
 import Chart from 'chart.js'
 export default {
     mounted() {
-    const ctx = document.getElementById('myChart');
+    const ctx = document.getElementById('barChart');
     // eslint-disable-next-line
-  const myChart = new Chart(ctx, {
+  const barChart = new Chart(ctx, {
     type: 'bar',
     data: {
         labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
