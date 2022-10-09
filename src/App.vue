@@ -10,6 +10,7 @@ import Chart from 'chart.js'
 export default {
   mounted() {
     const ctx = document.getElementById('myChart');
+    // eslint-disable-next-line
   const myChart = new Chart(ctx, {
     type: 'bar',
     data: {
